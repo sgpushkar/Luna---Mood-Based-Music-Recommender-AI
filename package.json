@@ -1,17 +1,24 @@
 {
   "name": "luna-ai-bot",
-  "version": "1.0.0",
-  "description": "Luna AI chatbot that suggests songs based on mood using OpenAI and Spotify.",
+  "version": "2.0.0",
+  "description": "Luna – AI mood-based music recommender",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^17.0.0",
-    "express": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-rate-limit": "^7.2.0",
+    "json5": "^2.2.3",
     "node-fetch": "^3.3.2",
-    "openai": "^5.8.2"
+    "openai": "^4.28.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
